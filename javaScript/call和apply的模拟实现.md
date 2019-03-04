@@ -22,7 +22,7 @@ function bar(name, age) {
         age: age
     }
 }
-bar.call2(null); // 2
+bar.call2(null, 'jane',12); // 2
 
 Function.apply2= function(context, arr){
   var context= context || window;
@@ -48,5 +48,5 @@ function bar(name, age) {
         age: age
     }
 }
-bar.apply2(null, ['jane', 12]); // 2
+bar.apply2(null, ['jane', 12]);
 ```
